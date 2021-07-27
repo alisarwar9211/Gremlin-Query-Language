@@ -1,0 +1,30 @@
+* get vertex by its property's value
+g.V().has('age', 21);
+
+
+* get all values of a particular vertex by its property's value
+g.V().has('age', 21).values();
+
+
+* get all vertices whose 'age' property is greaterthan 20
+g.V().has('age', gt(20));
+
+
+* get all vertices' value whose 'age' property is greaterthan 20
+g.V().has('age', gt(20)).values();
+
+
+* get vertex by its label & property's value
+g.V().has('user', 'age', 21);
+
+
+* get all values of a particular vertex by its label & property's value
+g.V().has('user', 'age', 21).values();
+
+
+* get all vertices whose label is 'user'
+g.V().hasLabel('user');
+
+
+* get all vertices' value whose label is 'user'
+g.V().hasLabel('user').values();

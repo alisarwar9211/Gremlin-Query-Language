@@ -1,0 +1,6 @@
+* group all vertices by thier label in form of array
+g.V().group().by(label);
+
+
+* group all vertices by thier label & use property in form of array
+g.V().group().by(label).by('name');

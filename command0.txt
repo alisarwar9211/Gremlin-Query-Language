@@ -1,0 +1,11 @@
+* go to directory
+bin/gremlin.sh
+bin/gremlin-server.sh conf/gremlin-server-min.yaml
+
+
+* create an empty graph ( graph database )
+graph = TinkerGraph.open();
+
+
+* create traversalSource of a graph ( create g as an entry point )
+g = graph.traversal();

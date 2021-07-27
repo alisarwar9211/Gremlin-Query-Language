@@ -1,0 +1,33 @@
+* get all edges
+g.E();
+
+
+* add edge
+g.addE('brothers').from(g.V().has('name', 'ALI')).to(g.V().has('name', 'FAIZ')).property(id, 1);
+
+
+* get all edges of all vertices
+g.V().outE();
+
+
+* get all edges from that particular vertex by its id
+g.V(1).outE();
+
+
+* get a particular named edge from that particular vertex by its id
+g.V(1).outE('brothers');
+
+
+* get all edges of all vertices, get all values of all vertices
+g.V().outE().inV().values();                   //OR
+g.V().out().values();
+
+
+* get all edges from that particular vertex by its id, get all values of all vertices
+g.V(1).outE().inV().values();                  //OR
+g.V(1).out().values();
+
+
+* get a particular named edges from that particular vertex by its id, get all values of all vertices
+g.V(1).outE('brothers').inV().values();        //OR
+g.V(1).out('brothers').values();

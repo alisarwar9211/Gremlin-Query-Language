@@ -1,0 +1,26 @@
+* to get vertices of both ways
+g.V().both();
+
+
+* to delete all vertices
+g.V().drop();
+
+
+* to delete vertex of particular id
+g.V(1).drop();
+
+
+* to delete vertex by property using has
+g.V().has(id, 1).drop();
+
+
+* to delete all edges
+g.E().drop();
+
+
+* to delete edges of particular id
+g.E(1).drop();
+
+
+* to delete edges property using has
+g.E().has(id, 1).drop();

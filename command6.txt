@@ -1,0 +1,10 @@
+* to assign all vertices in variable 'a' & select variable 'a'
+g.V().as('a').select('a');
+
+
+* to assign all vertices in variable 'a' & select variable 'a', group all vertices by thier property in form of array
+g.V().as('a').select('a').by('name');
+
+
+* to assign all vertices in variable 'a' and to assign all 'name' properties of all vertices in variable 'b' & select variable 'a' and 'b', group all vertices by thier property in form of array
+g.V().as('a').properties('name').as('b').select('a', 'b').by('name').by(id);

@@ -1,0 +1,38 @@
+* to get all incoming vertices to particular vertex
+g.V(1).in();
+
+
+* to get all outgoiing vertices' values to particular vertex
+g.V(1).in().value();
+
+
+* to get all incoming vertices to particular vertex
+g.V(1).out();
+
+
+* to get all outgoiing vertices' values to particular vertex
+g.V(1).out().value();
+
+
+* go to particular vertex to get all incoming vertices of that vertex
+g.V().has('name', 'FAIZ').in();
+
+
+* go to particular vertex's to get all incoming vertices of that vertex
+g.V().has('name', 'FAIZ').in().values();
+
+
+* go to particular vertex to get all outgoing vertices of that vertex
+g.V().has('name', 'FAIZ').out();
+
+
+* go to particular vertex's to get all outgoiing vertices of that vertex
+g.V().has('name', 'FAIZ').out().values();
+
+
+* go to particular vertex to get all incoming vertices of that vertex
+g.V().has('name', 'ALI').out('brothers').in('brothers');
+
+
+* go to particular vertex to get all incoming vertices values of that vertex
+g.V().has('name', 'ALI').out('brothers').in('brothers').values();

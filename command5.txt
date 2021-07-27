@@ -1,0 +1,13 @@
+* get vertex or vertices by using other property's value
+g.V().has('name', within('ALI'));
+g.V().has('name', within('ALI', 'FAIZ'));
+
+
+* get other particular property's value of vertex or vertices by using other property's value
+g.V().has('name', within('ALI')).values('age');
+g.V().has('name', within('ALI', 'FAIZ')).values('age');
+
+
+* taking mean between values
+g.V().has('name', within('ALI', 'FAIZ')).values('age').mean();
+g.V().has('user', 'name', within('ALI', 'FAIZ')).values('age').mean();
